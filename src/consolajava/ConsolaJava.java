@@ -20,8 +20,10 @@ public class ConsolaJava {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         Scanner entrada2 = new Scanner(System.in);
-        
-        
+        String arreglo[] = new String[5];
+        String aux;
+        Scanner scn = new Scanner (System.in);
+             
         int respuesta;
         int respuesta2;
         
@@ -49,12 +51,23 @@ public class ConsolaJava {
                 System.out.println(" Ingrese Usuario");
                 
                 
+        for (int i=0; i<arreglo.length; i++){
+            
+            
+            aux = scn.next();
+            arreglo[i] = aux;
+        }
+        for (int i = 0; i<arreglo.length; i++){
+           System.out.println(""+(i+1)+"."+arreglo[i]);
+        }   
+                
+                
                 
                 break;
                 
             case 2:
-                System.out.println("    Mostrar todos los usuarios");
-               
+                System.out.println("    Palabras palondrimas");
+                
                 
                 break;
             case 3:
